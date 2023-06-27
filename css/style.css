@@ -97,29 +97,6 @@ label span:nth-child(3) {
   top: 8px;
 }
 
-.menu {
-  height: 100px;
-  justify-content: space-around;
-  background-color: #504949;
-  display: flex;
-  margin: 2% 1% 2%;
-  padding: 15px;
-  transition: 0.3s;
-  position: relative;
-  box-shadow: 5px 5px 5px #413f3f;
-}
-nav a {
-  text-decoration: uppercase;
-  color: #fefefee7;
-  font-size: 22px;
-  text-decoration: none;
-}
-
-.menu-Principal {
-  background: rgb(80, 11, 80);
-  width: 50%;
-  margin-right: 3%;
-}
 .texto-Principal,
 p {
   text-align: center;
@@ -136,6 +113,31 @@ p {
 .texto-Principal {
   padding: 1rem;
   font-size: 25px;
+  font-weight: bold;
+ 
+}
+.projeto{
+  border: 1px solid #d9d1d1;
+  box-shadow: 0px 3px 10px #1e1e1e;
+  background-color: #F76C97;
+}
+.texto-projeto{
+  padding: 1.5rem;
+    font-size: 20px;
+    font-style: italic;
+    color: #fefefe;
+    background-color: #5d515d;
+    border: 1px solid #d9d1d1;
+    margin: 1em;
+}
+.projeto-imagem{
+  display: flex;
+  flex-direction: column;
+    margin: 1em;
+   
+}
+.projeto-imagem-imagem{
+  padding: 1rem;
 }
 em strong {
   color: #ff0000;
@@ -145,10 +147,69 @@ em strong {
   font-size: 20px;
   font-style: italic;
 }
+.fotodakah__container{
+  display: flex;
+  justify-content: center;
+}
 .fotodakah {
   width: 100vw;
-  max-width: 600px;
+  max-width: 300px;
 }
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #662764;
+  box-shadow: 0 2px 10px 5px #00000020;
+}
+.rodape__logo{
+  max-width: 200px;
+ max-height:250px;
+}
+
+.rodape__social {
+  display: flex;
+}
+
+.rodape__midia {
+  display: flex;
+
+  width: 42px;
+  height: 42px;
+
+  margin: 2rem 1rem;
+}
+
+.rodape__navegacao {
+  color:#662764;
+  text-align: center;
+  line-height: 3;
+}
+
+
+.rodape__link {
+  display: inline-block;
+
+  margin: 0 .5rem .7rem;
+}
+@media screen and (min-width: 1024px) {
+  .rodape {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .rodape__navegacao {
+      text-align: left;
+
+      min-width: 600px;
+  }
+}
+
+
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-bar {
@@ -181,9 +242,13 @@ em strong {
     flex-direction: row;
     margin: -143px 40px;
   }
+  .principal{
+    padding: 2.3rem;
+    max-width:923px;
+  }
   .fotodakah {
-    width: 70vw;
-    max-width: 1200px;
-    margin-left: 158px;
+    width: 100vw;
+    max-width: 786px;
+    margin-left: 9px;
   }
 }
